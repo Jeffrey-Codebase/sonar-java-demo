@@ -8,6 +8,11 @@ public class SonarJavaDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SonarJavaDemoApplication.class, args);
+		System.out.println(getHelloString());
+	}
+
+	public static String getHelloString() {
+		return "hello soarn java";
 	}
 
 }
