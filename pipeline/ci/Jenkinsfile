@@ -6,7 +6,7 @@ deployProject (
     buildCommand: "mvn clean package -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080 -DskipTests=true",
     testCommand: "mvn test -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080",
 	sonarCommand: "mvn sonar:sonar -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080",
-    sonarQubeName: "GDSP SonarQube",
+    sonarQubeName: "SonarQubeDemo",
     skipDockerBuild: "true",
 	skipDockerPush: "true",
     skipDeployment: "true",
