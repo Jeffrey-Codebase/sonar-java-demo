@@ -5,7 +5,7 @@ deployProject (
     projectType: "maven",
     buildCommand: "mvn clean package -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080 -DskipTests=true",
     testCommand: "mvn test -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080",
-	sonarCommand: "mvn sonar:sonar -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080",
+	sonarCommand: "mvn sonar:sonar -DproxySet=true -Dhttps.proxyHost=pkg.proxy.prod.jp.local -Dhttps.proxyPort=10080 -Dsonar.login=1ad066960082a3247a8020dd24a19cc6cd8ebc14",
     sonarQubeName: "SonarQubeDemo",
     skipDockerBuild: "true",
 	skipDockerPush: "true",
